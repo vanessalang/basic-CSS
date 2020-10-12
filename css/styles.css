@@ -1,4 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* this is an id but it is better to use classes when you can#the-one {
+    color: greenyellow;
+}*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+body {
+  background-color: lightgray;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 h1 {
+  color: rgb(0, 225, 255);
+  background-color: rgb(88, 16, 61);
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-left: 0.5rem;
+}
+
+.new-color {
+  color: blue;
+  color: rgb(0, 0, 255);
+  color: rgba(0, 0, 255, 1);
+  background-color: white;
+  margin-left: 0.5rem;
+}
+/*the a in rgba affects transparency which is alpha channel*/
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: normal;
+  word-spacing: normal;
+  margin-left: 0.5rem;
+}
+/*make images responsive*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: underline;
+  background-color: lightgray;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: rgb(88, 16, 61);
+}
+a:active {
   color: red;
-  background-color: lightyellow;
+}
+
+.box {
+  background-color: pink;
+  width: 300px;
+  padding: 30px;
+  border: 20px solid greenyellow;
+  margin: 30px;
+}
+
+.standard-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
 }
